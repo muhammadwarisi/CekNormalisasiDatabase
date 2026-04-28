@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NormalizationController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('normalization.upload');
 });
 
 /**
